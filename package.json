@@ -1,0 +1,26 @@
+{
+  "name": "promotion-typescript",
+  "version": "1.0.0",
+  "description": "晋级 TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./index.html",
+    "dev": "nodemon --watch src/ -e ts --exec ts-node ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITZengWei/promotion-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ITZengWei/promotion-typescript/issues"
+  },
+  "homepage": "https://github.com/ITZengWei/promotion-typescript#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "parcel-bundler": "^1.12.5"
+  }
+}
