@@ -1,3 +1,3 @@
-const a: number = 100
-console.log(a)
+// import './low'
+import './middle'
  
