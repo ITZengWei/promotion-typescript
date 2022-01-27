@@ -111,11 +111,12 @@ type Person = {
   type Unshift<T extends any[], U> = [U, ...T] 
   type Shift<T extends any[]> =  T extends [infer F, ...infer O] ? O : never
   
-  // type Pop<T extends [F, infer O]> = O
+  type Pop<T> = T extends [...infer O, infer L] ? O : never
 
   type PushResult = Push<[1, 2, 3], 4> // [1, 2, 3, 4]
   type UnshiftResult = Unshift<[1, 2, 3], 0> // [0, 1, 2, 3]
   type ShiftResult = Shift<[1, 2, 3]> // [2, 3]
+  type PopResult = Pop<[1, 2, 3]> // [1, 2]
 }
 
 /** Parameters 函数参数类型 TODO */
